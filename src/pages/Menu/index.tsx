@@ -1,5 +1,5 @@
 import styles from './Menu.module.scss';
-import { ReactComponent as LogoSvg } from '../../assets/logo.svg'; 
+import { ReactComponent as LogoSvg } from 'assets/logo.svg'; 
 
 export default function Menu() {
   return (
