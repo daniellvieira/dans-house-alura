@@ -21,3 +21,5 @@ https://github.com/alura-cursos/aluroni-introducao/tree/aula1.3
 https://github.com/alura-cursos/aluroni-introducao/tree/Aula1
 
 npm install -D typescript-plugin-css-modules
+
+https://www.alura.com.br/artigos/o-que-e-reset-css
