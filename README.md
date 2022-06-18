@@ -29,3 +29,5 @@ https://create-react-app.dev/docs/adding-css-reset
 https://desenvolvimentoparaweb.com/css/bem/
 
 https://www.npmjs.com/package/react-icons
+
+https://github.com/alura-cursos/aluroni-introducao/tree/Aula3
