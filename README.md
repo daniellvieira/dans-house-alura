@@ -25,3 +25,7 @@ https://www.alura.com.br/artigos/o-que-e-reset-css
 
 https://create-react-app.dev/docs/adding-images-fonts-and-files/
 https://create-react-app.dev/docs/adding-css-reset
+
+https://desenvolvimentoparaweb.com/css/bem/
+
+https://www.npmjs.com/package/react-icons

@@ -1,10 +1,14 @@
 import styles from './Menu.module.scss';
 import { ReactComponent as LogoSvg } from 'assets/logo.svg'; 
+import { useState } from 'react';
+import SearchEngine from './SearchEngine';
 
 export default function Menu() {
+  const [search, setSearch] = useState("");
+
   return (
     <main>
-      <nav className={styles.menu}>
+      <nav className={styles.cardapio}>
         <LogoSvg />
         Casa do Dan
       </nav>
@@ -13,7 +17,13 @@ export default function Menu() {
           A casa do código e da massa.
         </div>
       </header>
- 
+      <section className={styles.cardapio}>
+        <h3 className={styles.cardapio__title}>Cardápio</h3>
+        <SearchEngine
+          search={search}
+          setSearch={setSearch}
+        />
+      </section>
     </main>
   )  
 }
