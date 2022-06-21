@@ -31,3 +31,9 @@ https://desenvolvimentoparaweb.com/css/bem/
 https://www.npmjs.com/package/react-icons
 
 https://github.com/alura-cursos/aluroni-introducao/tree/Aula3
+
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Working_with_Objects#objetos_e_propriedades
+
+https://www.npmjs.com/package/classnames
+
+https://github.com/alura-cursos/aluroni-introducao/tree/Aula4
