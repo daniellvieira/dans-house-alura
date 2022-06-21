@@ -8,6 +8,7 @@ import Ordering from './Ordering';
 export default function Menu() {
   const [search, setSearch] = useState<string>("");
   const [filter, setFilter] = useState<number | null>(null);
+  const [ordering, setOrdering] = useState<string>("");
 
   return (
     <main>
@@ -32,7 +33,8 @@ export default function Menu() {
             setFilter={setFilter}
           />
           <Ordering
-            
+            ordering={ordering}
+            setOrdering={setOrdering}
           />
         </div>
       </section>
