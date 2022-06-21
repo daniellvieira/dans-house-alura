@@ -3,6 +3,7 @@ import { ReactComponent as LogoSvg } from 'assets/logo.svg';
 import { useState } from 'react';
 import SearchEngine from './SearchEngine';
 import Filters from './Filters';
+import Ordering from './Ordering';
 
 export default function Menu() {
   const [search, setSearch] = useState<string>("");
@@ -29,6 +30,9 @@ export default function Menu() {
           <Filters
             filter={filter}
             setFilter={setFilter}
+          />
+          <Ordering
+            
           />
         </div>
       </section>

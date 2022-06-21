@@ -18,6 +18,7 @@ export default function SearchEngine({ search, setSearch }: Props) {
         type="text"
         value={search}
         onChange={handleChange}
+        placeholder='Buscar'
       />
       <CgSearch 
         size={20}
