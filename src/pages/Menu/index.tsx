@@ -5,7 +5,8 @@ import SearchEngine from './SearchEngine';
 import Filters from './Filters';
 
 export default function Menu() {
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState<string>("");
+  const [filter, setFilter] = useState<number | null>(null);
 
   return (
     <main>
@@ -25,7 +26,10 @@ export default function Menu() {
           setSearch={setSearch}
         />
         <div className={styles.cardapio__filters}>
-          <Filters />
+          <Filters
+            filter={filter}
+            setFilter={setFilter}
+          />
         </div>
       </section>
     </main>
