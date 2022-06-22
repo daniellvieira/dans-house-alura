@@ -4,6 +4,7 @@ import { useState } from 'react';
 import SearchEngine from './SearchEngine';
 import Filters from './Filters';
 import Ordering from './Ordering';
+import Items from './Items';
 
 export default function Menu() {
   const [search, setSearch] = useState<string>("");
@@ -37,6 +38,7 @@ export default function Menu() {
             setOrdering={setOrdering}
           />
         </div>
+        <Items />
       </section>
     </main>
   )  
