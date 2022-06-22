@@ -7,7 +7,10 @@ export default function Items () {
   return (
     <div className={styles.items}>
       {items.map((item) => (
-        <Item key={item.id}/>
+        <Item
+          key={item.id}
+          { ...item }
+        />
       ) )}
     </div>
   )

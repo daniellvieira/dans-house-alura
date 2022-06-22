@@ -1,34 +1,28 @@
-import logoSvg from 'assets/logo.svg';
 import styles from './Item.module.scss';
+import items from '../items.json';
 
-interface Props {
+type Props = typeof items[0]; 
 
-};
+export default function Item (props: Props) {
+  const { title, description, category, price, serving, size, photo} = props;
 
-export default function Item () {
   return (
     <div className={styles.item}>
       <div className={styles.item__image}>
-        <img src={logoSvg} alt="image" />
+        <img src={photo} alt={title} />
       </div>
       <div className={styles.item__description}>
         <div className={styles.item__title}>
-          <h2>Macarrão</h2>
-          <p>Descrição do produto</p>
+          <h2>{title}</h2>
+          <p>{description}</p>
         </div>
         <div className={styles.item__tags}>
-          <div className={styles.item__types}>
-            Massa
+          <div className={styles.item__categories}>{category.label}</div>
+          <div className={styles.item__size}>{size}g</div>
+          <div className={styles.item__serving}>
+            Serve {serving} pessoa{serving === 1 ? '' : 's' }
           </div>
-          <div className={styles.item__lot}>
-            400g
-          </div>
-          <div className={styles.item__qtdperson}>
-            Serve 2 pessoas
-          </div>
-          <div className={styles.item__value}>
-            R$ 50,00
-          </div>
+          <div className={styles.item__value}>R$ {price.toFixed(2)}</div>
         </div>
       </div>
       
