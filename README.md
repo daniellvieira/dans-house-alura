@@ -6,6 +6,10 @@ To do this I used TypeScript, CSS Modules, ClassNames and ReactIcons.
 
 This project was created based on the Alura's course, called [React: lidando com arquivos estáticos](https://www.alura.com.br/curso-online-react-arquivos-estaticos).
 
+I used ESlint to allow us to have a code pattern and more robust code.
+
+I also used react-router-dom, brownser router, routes, link, useNavigate, useLocation and useParams.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -24,7 +28,16 @@ You will also see any lint errors in the console.
 
 `npm install -D typescript-plugin-css-modules`
 
+### How to install ESLINT
+
+`npm init @eslint/config`
+`npx eslint ./src --fix`
+
 ### Articles
+
+[Documentação: Estado e Ciclo de Vida](https://pt-br.reactjs.org/docs/state-and-lifecycle.html)
+
+[Documentação: Componentes e Props](https://pt-br.reactjs.org/docs/components-and-props.html)
 
 [ResetCSS](https://www.alura.com.br/artigos/o-que-e-reset-css)
 

@@ -1,6 +1,6 @@
 import styles from './Item.module.scss';
 import items from '../items.json';
-import classNames from "classnames";
+import classNames from 'classnames';
 
 type Props = typeof items[0]; 
 
@@ -19,9 +19,9 @@ export default function Item (props: Props) {
         </div>
         <div className={styles.item__tags}>
           <div className={classNames(
-              styles.item__categories,
-              styles[`item__categories__${category.label.toLowerCase()}`]
-            )}>{category.label}</div>
+            styles.item__categories,
+            styles[`item__categories__${category.label.toLowerCase()}`]
+          )}>{category.label}</div>
           <div className={styles.item__size}>{size}g</div>
           <div className={styles.item__serving}>
             Serve {serving} pessoa{serving === 1 ? '' : 's' }
@@ -31,5 +31,5 @@ export default function Item (props: Props) {
       </div>
       
     </div>
-  )
-};
+  );
+}

@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 import styles from './SearchEngine.module.scss';
 import { CgSearch } from 'react-icons/cg';
 
 interface Props {
   search: string,
   setSearch: React.Dispatch<React.SetStateAction<string>>
-};
+}
 
 export default function SearchEngine({ search, setSearch }: Props) {
   function handleChange(event: React.ChangeEvent<HTMLInputElement>) {
@@ -25,5 +25,5 @@ export default function SearchEngine({ search, setSearch }: Props) {
         color='#4D4C5E'
       />
     </div>
-  )
-};
+  );
+}

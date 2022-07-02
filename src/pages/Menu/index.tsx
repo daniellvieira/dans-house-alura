@@ -8,9 +8,9 @@ import Items from './Items';
 import { optionsOrdering } from 'types/optionsOrdering';
 
 export default function Menu() {
-  const [search, setSearch] = useState<string>("");
+  const [search, setSearch] = useState<string>('');
   const [filter, setFilter] = useState<number | null>(null);
-  const [ordering, setOrdering] = useState<optionsOrdering>("");
+  const [ordering, setOrdering] = useState<optionsOrdering>('');
 
   return (
     <main>
@@ -42,5 +42,5 @@ export default function Menu() {
         <Items search={search} filter={filter} ordering={ordering}/>
       </section>
     </main>
-  )  
+  );  
 }

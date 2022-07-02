@@ -2,7 +2,7 @@ import styles from './Ordering.module.scss';
 import options from './options.json';
 import { useState } from 'react';
 import classNames from 'classnames';
-import { MdKeyboardArrowUp, MdKeyboardArrowDown } from 'react-icons/md'
+import { MdKeyboardArrowUp, MdKeyboardArrowDown } from 'react-icons/md';
 import { optionsOrdering } from 'types/optionsOrdering';
 
 interface Props {
@@ -12,7 +12,7 @@ interface Props {
 
 export default function Ordering({ ordering, setOrdering }: Props) {
   const [open, setOpen] = useState<boolean>(false);
-  const nameOrdering = ordering && options.find(option => option.value === ordering)?.name
+  const nameOrdering = ordering && options.find(option => option.value === ordering)?.name;
 
   return (
     <button
@@ -40,5 +40,5 @@ export default function Ordering({ ordering, setOrdering }: Props) {
         ))}
       </div>
     </button>
-  )
-};
+  );
+}

@@ -32,14 +32,14 @@ export default function Items (props: Props) {
 
   function order(newList: typeof items) {
     switch(ordering) {
-      case 'lot':
-        return orderBy(newList, 'size');
-      case 'qtd_person':
-        return orderBy(newList, 'serving');
-      case 'price':
-        return orderBy(newList, 'price');
-      default:
-        return newList;
+    case 'lot':
+      return orderBy(newList, 'size');
+    case 'qtd_person':
+      return orderBy(newList, 'serving');
+    case 'price':
+      return orderBy(newList, 'price');
+    default:
+      return newList;
     }
   }
 
@@ -48,7 +48,7 @@ export default function Items (props: Props) {
       testSearch(item.title) && testFilter(item.category.id)
     ));
     setList(order(newList));
-  }, [search, filter, ordering])
+  }, [search, filter, ordering]);
 
   return (
     <div className={styles.items}>
@@ -59,5 +59,5 @@ export default function Items (props: Props) {
         />
       ) )}
     </div>
-  )
-};
+  );
+}
