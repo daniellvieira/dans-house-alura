@@ -3,10 +3,11 @@ import options from './options.json';
 import { useState } from 'react';
 import classNames from 'classnames';
 import { MdKeyboardArrowUp, MdKeyboardArrowDown } from 'react-icons/md'
+import { optionsOrdering } from 'types/optionsOrdering';
 
 interface Props {
-  ordering: string,
-  setOrdering: React.Dispatch<React.SetStateAction<string>>,
+  ordering: optionsOrdering,
+  setOrdering: React.Dispatch<React.SetStateAction<optionsOrdering>>,
 }
 
 export default function Ordering({ ordering, setOrdering }: Props) {
@@ -32,7 +33,7 @@ export default function Ordering({ ordering, setOrdering }: Props) {
           <div
             className={styles.ordering__option}
             key={option.value}
-            onClick={() => setOrdering(option.value)}
+            onClick={() => setOrdering(option.value as optionsOrdering)}
           >
             {option.name}
           </div>

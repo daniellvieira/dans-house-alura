@@ -1,0 +1,1 @@
+export type optionsOrdering = '' | 'lot' | 'qtd_person' | 'price';

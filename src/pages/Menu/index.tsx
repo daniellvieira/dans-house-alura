@@ -5,11 +5,12 @@ import SearchEngine from './SearchEngine';
 import Filters from './Filters';
 import Ordering from './Ordering';
 import Items from './Items';
+import { optionsOrdering } from 'types/optionsOrdering';
 
 export default function Menu() {
   const [search, setSearch] = useState<string>("");
   const [filter, setFilter] = useState<number | null>(null);
-  const [ordering, setOrdering] = useState<string>("");
+  const [ordering, setOrdering] = useState<optionsOrdering>("");
 
   return (
     <main>
