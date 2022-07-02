@@ -38,7 +38,7 @@ export default function Menu() {
             setOrdering={setOrdering}
           />
         </div>
-        <Items />
+        <Items search={search} filter={filter} ordering={ordering}/>
       </section>
     </main>
   )  

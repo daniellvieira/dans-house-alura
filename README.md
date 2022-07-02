@@ -37,3 +37,7 @@ https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Working_with_Objec
 https://www.npmjs.com/package/classnames
 
 https://github.com/alura-cursos/aluroni-introducao/tree/Aula4
+
+https://create-react-app.dev/docs/using-the-public-folder
+
+https://github.com/alura-cursos/aluroni-introducao/tree/Aula5
