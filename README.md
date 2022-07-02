@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# The house of code and food
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this project I present the menu of a certain restaurant, allowing filtering by name, category, and enabling sorting by serving size, number of people served, or price.
+
+To do this I used TypeScript, CSS Modules, ClassNames and ReactIcons.
+
+This project was created based on the Alura's course, called [React: lidando com arquivos estáticos](https://www.alura.com.br/curso-online-react-arquivos-estaticos).
 
 ## Available Scripts
 
@@ -14,30 +18,40 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-## Libs
+## References
 
-https://github.com/alura-cursos/aluroni-introducao/tree/Aula1
-https://github.com/alura-cursos/aluroni-introducao/tree/Aula2
+### How to install CSS Modules
 
-npm install -D typescript-plugin-css-modules
+`npm install -D typescript-plugin-css-modules`
 
-https://www.alura.com.br/artigos/o-que-e-reset-css
+### Articles
 
-https://create-react-app.dev/docs/adding-images-fonts-and-files/
-https://create-react-app.dev/docs/adding-css-reset
+[ResetCSS](https://www.alura.com.br/artigos/o-que-e-reset-css)
 
-https://desenvolvimentoparaweb.com/css/bem/
+---
 
-https://www.npmjs.com/package/react-icons
+[AddingImagesFontsAndFiles](https://create-react-app.dev/docs/adding-images-fonts-and-files/)
 
-https://github.com/alura-cursos/aluroni-introducao/tree/Aula3
+[AddingCssReset](https://create-react-app.dev/docs/adding-css-reset)
 
-https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Working_with_Objects#objetos_e_propriedades
+[Using the Public Folder](https://create-react-app.dev/docs/using-the-public-folder)
 
-https://www.npmjs.com/package/classnames
+---
 
-https://github.com/alura-cursos/aluroni-introducao/tree/Aula4
+[Bem CSS](https://desenvolvimentoparaweb.com/css/bem/)
 
-https://create-react-app.dev/docs/using-the-public-folder
+[React Icons](https://www.npmjs.com/package/react-icons)
 
-https://github.com/alura-cursos/aluroni-introducao/tree/Aula5
+[ClassNames](https://www.npmjs.com/package/classnames)
+
+---
+
+[Aula 1](https://github.com/alura-cursos/aluroni-introducao/tree/Aula1)
+
+[Aula 2](https://github.com/alura-cursos/aluroni-introducao/tree/Aula2)
+
+[Aula 3](https://github.com/alura-cursos/aluroni-introducao/tree/Aula3)
+
+[Aula 4](https://github.com/alura-cursos/aluroni-introducao/tree/Aula4)
+
+[Aula 5](https://github.com/alura-cursos/aluroni-introducao/tree/Aula5)
