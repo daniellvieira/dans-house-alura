@@ -11,7 +11,14 @@ interface Props {
 
 export default function Items (props: Props) {
   const [list, setList] = useState(items);
-  const { search, filter } = props;
+  const { search, filter, ordering } = props;
+
+  const orderBy = (
+    list: typeof items,
+    orderKind: 'size' | 'serving' | 'price'
+  ) => {
+    return list.sort((a, b) => (a[orderKind] > b[orderKind] ? 1 : -1));
+  };
 
   function testSearch(title: string) {
     const regex = new RegExp(search, 'i');
@@ -23,12 +30,25 @@ export default function Items (props: Props) {
     return true;
   }
 
+  function order(newList: typeof items) {
+    switch(ordering) {
+      case 'lot':
+        return orderBy(newList, 'size');
+      case 'qtd_person':
+        return orderBy(newList, 'serving');
+      case 'price':
+        return orderBy(newList, 'price');
+      default:
+        return newList;
+    }
+  }
+
   useEffect(() => {
     const newList = items.filter(item => (
       testSearch(item.title) && testFilter(item.category.id)
     ));
-    setList(newList);
-  }, [search, filter])
+    setList(order(newList));
+  }, [search, filter, ordering])
 
   return (
     <div className={styles.items}>
