@@ -28,6 +28,10 @@ You will also see any lint errors in the console.
 
 `npm install -D typescript-plugin-css-modules`
 
+### How to install ReactRouterDOM
+
+`npm i react-routes-dom`
+
 ### How to install ESLINT
 
 `npm init @eslint/config`
