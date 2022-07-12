@@ -74,3 +74,5 @@ You will also see any lint errors in the console.
 [Aula 4](https://github.com/alura-cursos/aluroni-introducao/tree/Aula4)
 
 [Aula 5](https://github.com/alura-cursos/aluroni-introducao/tree/Aula5)
+
+[Aluroni Routes](https://github.com/alura-cursos/aluroni-router)
