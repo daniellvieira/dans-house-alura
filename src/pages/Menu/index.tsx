@@ -5,7 +5,6 @@ import Filters from './Filters';
 import Ordering from './Ordering';
 import Items from './Items';
 import { optionsOrdering } from 'types/optionsOrdering';
-import TopBar from 'components/TopBar';
 
 export default function Menu() {
   const [search, setSearch] = useState<string>('');
@@ -14,7 +13,6 @@ export default function Menu() {
 
   return (
     <main>
-      <TopBar />
       <header className={styles.header}>
         <div className={styles.header__text}>
           A casa do código e da massa.
