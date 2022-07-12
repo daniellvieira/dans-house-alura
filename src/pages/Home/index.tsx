@@ -1,3 +1,4 @@
+import TopBar from 'components/TopBar';
 import items from 'data/menu.json';
 import styles from './Home.module.scss';
 
@@ -7,6 +8,7 @@ export default function Home() {
 
   return (
     <section>
+      <TopBar />
       <h3 className={styles.title}>
         Recomendações do Chef
       </h3>

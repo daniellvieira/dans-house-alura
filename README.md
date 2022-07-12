@@ -43,6 +43,8 @@ You will also see any lint errors in the console.
 
 [Documentação: Componentes e Props](https://pt-br.reactjs.org/docs/components-and-props.html)
 
+[Documentação: React Router DOM](https://reactrouter.com/docs/en/v6)
+
 [ResetCSS](https://www.alura.com.br/artigos/o-que-e-reset-css)
 
 ---
