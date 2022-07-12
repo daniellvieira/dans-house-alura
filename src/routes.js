@@ -1,4 +1,4 @@
-import Header from 'components/Header';
+import DefaultPage from 'components/DefaultPage';
 import TopBar from 'components/TopBar';
 import Home from 'pages/Home';
 import Menu from 'pages/Menu';
@@ -9,10 +9,11 @@ export default function AppRouter() {
     <main>
       <Router>
         <TopBar />
-        <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/menu" element={<Menu />} />
+          <Route path="/" element={<DefaultPage />}>
+            <Route index element={<Home />} />
+            <Route path="menu" element={<Menu />} />
+          </Route>
         </Routes>
       </Router>
     </main>
