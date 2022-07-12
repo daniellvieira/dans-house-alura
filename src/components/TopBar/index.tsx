@@ -1,6 +1,6 @@
 import { ReactComponent as LogoSvg } from 'assets/logo.svg'; 
 import styles from './TopBar.module.scss';
-
+import { Link } from 'react-router-dom';
 export default function TopBar() {
   const routes = [{
     label: 'Início',
@@ -19,9 +19,7 @@ export default function TopBar() {
       <ul className={styles.topbar__list}>
         {routes.map((route, index) => (
           <li key={index} className={styles.topbar__link}>
-            <a href={route.to}>
-              {route.label}
-            </a>
+            <Link to={route.to}>{route.label}</Link>
           </li>
         ))}
       </ul>
