@@ -12,30 +12,23 @@ export default function Menu() {
   const [ordering, setOrdering] = useState<optionsOrdering>('');
 
   return (
-    <main>
-      <header className={styles.header}>
-        <div className={styles.header__text}>
-          A casa do código e da massa.
-        </div>
-      </header>
-      <section className={styles.cardapio}>
-        <h3 className={styles.cardapio__title}>Cardápio</h3>
-        <SearchEngine
-          search={search}
-          setSearch={setSearch}
+    <section className={styles.cardapio}>
+      <h3 className={styles.cardapio__title}>Cardápio</h3>
+      <SearchEngine
+        search={search}
+        setSearch={setSearch}
+      />
+      <div className={styles.cardapio__filters}>
+        <Filters
+          filter={filter}
+          setFilter={setFilter}
         />
-        <div className={styles.cardapio__filters}>
-          <Filters
-            filter={filter}
-            setFilter={setFilter}
-          />
-          <Ordering
-            ordering={ordering}
-            setOrdering={setOrdering}
-          />
-        </div>
-        <Items search={search} filter={filter} ordering={ordering}/>
-      </section>
-    </main>
+        <Ordering
+          ordering={ordering}
+          setOrdering={setOrdering}
+        />
+      </div>
+      <Items search={search} filter={filter} ordering={ordering}/>
+    </section>
   );  
 }
