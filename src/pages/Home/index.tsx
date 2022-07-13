@@ -3,13 +3,14 @@ import styles from './Home.module.scss';
 import stylesTheme from 'styles/Theme.module.scss';
 import ourHouseImg from 'assets/nossa_casa.png';
 import { useNavigate } from 'react-router-dom';
+import { Dish } from 'types/Dish';
 
 export default function Home() {
   let recommendedDishes = [...items];
   recommendedDishes = recommendedDishes.sort(() => 0.5 - Math.random()).splice(0,3);
   const navigate = useNavigate();
 
-  function redirectToDetails(dish: typeof items[0]) {
+  function redirectToDetails(dish: Dish) {
     navigate(`/dishes/${dish.id}`, { state: { dish }, replace: true });
   }
 

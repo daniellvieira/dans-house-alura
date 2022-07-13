@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Item from './Item';
 import items from 'data/menu.json';
 import styles from './Items.module.scss';
+import { Menu } from 'types/Dish';
 
 interface Props {
   search: string;
@@ -14,7 +15,7 @@ export default function Items (props: Props) {
   const { search, filter, ordering } = props;
 
   const orderBy = (
-    list: typeof items,
+    list: Menu,
     orderKind: 'size' | 'serving' | 'price'
   ) => {
     return list.sort((a, b) => (a[orderKind] > b[orderKind] ? 1 : -1));
@@ -30,7 +31,7 @@ export default function Items (props: Props) {
     return true;
   }
 
-  function order(newList: typeof items) {
+  function order(newList: Menu) {
     switch(ordering) {
     case 'lot':
       return orderBy(newList, 'size');

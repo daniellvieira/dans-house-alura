@@ -1,15 +1,16 @@
 import styles from './Dish.module.scss';
-import { useLocation } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import classNames from 'classnames';
 import items from 'data/menu.json';
 
 const Dish = () => {
-  const { state } = useLocation();
-  const { dish } = state as { dish: typeof items[0]};
-
-  return (
+  const params = useParams();
+  const navigate = useNavigate();
+  const dish = items.find(item => item.id === Number(params.id));
+  
+  return (dish && 
     <>
-      <button className={styles.back}>
+      <button className={styles.back} onClick={() => navigate(-1)}>
         {' < Voltar'}
       </button>
       <section className={styles.container}>
