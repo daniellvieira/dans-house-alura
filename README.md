@@ -63,16 +63,10 @@ You will also see any lint errors in the console.
 
 [ClassNames](https://www.npmjs.com/package/classnames)
 
+[Hook useNavigate](https://reactrouter.com/docs/en/v6/hooks/use-navigate)
+
 ---
 
-[Aula 1](https://github.com/alura-cursos/aluroni-introducao/tree/Aula1)
-
-[Aula 2](https://github.com/alura-cursos/aluroni-introducao/tree/Aula2)
-
-[Aula 3](https://github.com/alura-cursos/aluroni-introducao/tree/Aula3)
-
-[Aula 4](https://github.com/alura-cursos/aluroni-introducao/tree/Aula4)
-
-[Aula 5](https://github.com/alura-cursos/aluroni-introducao/tree/Aula5)
+[Aluroni Introduction](https://github.com/alura-cursos/aluroni-introducao)
 
 [Aluroni Routes](https://github.com/alura-cursos/aluroni-router)
