@@ -6,7 +6,7 @@ import Home from 'pages/Home';
 import Menu from 'pages/Menu';
 import Dish from 'pages/Dish';
 import NotFound from 'pages/NotFound';
-
+import Admin from 'pages/Admin';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 export default function AppRouter() {
@@ -21,6 +21,7 @@ export default function AppRouter() {
             <Route path="about" element={<About />} />
           </Route>
           <Route path="dishes/:id" element={<Dish />} />
+          <Route path="admin/:user" element={<Admin />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
