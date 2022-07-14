@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import items from 'data/menu.json';
 import TagsDish from 'components/TagsDish';
 import NotFound from 'pages/NotFound';
+import DefaultPage from 'components/DefaultPage';
 
 const Dish = () => {
   const params = useParams();
@@ -11,7 +12,7 @@ const Dish = () => {
   
   if (!dish) return <NotFound />;
   return (
-    <>
+    <DefaultPage>
       <button className={styles.back} onClick={() => navigate(-1)}>
         {' < Voltar'}
       </button>
@@ -25,7 +26,7 @@ const Dish = () => {
           <TagsDish {...dish} />
         </div>
       </section>
-    </>
+    </DefaultPage>
   );
 };
 
