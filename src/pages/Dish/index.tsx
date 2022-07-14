@@ -2,13 +2,15 @@ import styles from './Dish.module.scss';
 import { useParams, useNavigate } from 'react-router-dom';
 import items from 'data/menu.json';
 import TagsDish from 'components/TagsDish';
+import NotFound from 'pages/NotFound';
 
 const Dish = () => {
   const params = useParams();
   const navigate = useNavigate();
   const dish = items.find(item => item.id === Number(params.id));
   
-  return (dish && 
+  if (!dish) return <NotFound />;
+  return (
     <>
       <button className={styles.back} onClick={() => navigate(-1)}>
         {' < Voltar'}
