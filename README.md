@@ -47,6 +47,10 @@ You will also see any lint errors in the console.
 
 [ResetCSS](https://www.alura.com.br/artigos/o-que-e-reset-css)
 
+[React: componentes com Styled Components](https://www.alura.com.br/artigos/react-componentes-com-styled-components)
+
+[REST: Conceito e fundamentos](https://www.alura.com.br/artigos/rest-conceito-e-fundamentos)
+
 ---
 
 [AddingImagesFontsAndFiles](https://create-react-app.dev/docs/adding-images-fonts-and-files/)
