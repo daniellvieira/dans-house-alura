@@ -1,9 +1,8 @@
 import styles from './DefaultPage.module.scss';
 import { Outlet } from 'react-router-dom';
 import stylesTheme from 'styles/Theme.module.scss';
-import React from 'react';
 
-export default function Header({ children }: { children?: React.ReactNode }) {
+export default function Header() {
   return(
     <>
       <header className={styles.header}>
@@ -13,7 +12,6 @@ export default function Header({ children }: { children?: React.ReactNode }) {
       </header>
       <div className={stylesTheme.container}>
         <Outlet />
-        {children}
       </div>
     </>
   );
